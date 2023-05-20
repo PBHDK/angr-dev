@@ -7,9 +7,9 @@ stdenv.mkDerivation rec {
 
   buildInputs = [
     python3Packages.virtualenvwrapper
-    python2   # To build unicorn
-    python3   # For CPython install
-    pypy3     # for PyPy install
+    python2 # To build unicorn
+    python3 # For CPython install
+    pypy3 # for PyPy install
     nasm
     libxml2
     libxslt
@@ -28,6 +28,6 @@ stdenv.mkDerivation rec {
   ];
 
   shellHook = ''
-      source $(command -v virtualenvwrapper.sh)
+    source $(command -v virtualenvwrapper.sh)
   '';
 }
