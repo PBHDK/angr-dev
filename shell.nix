@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
   ];
 
   shellHook = ''
-      source $(command -v virtualenvwrapper.sh)
-      export LD_LIBRARY_PATH="${stdenv.cc.cc.lib}/lib:${pkgs.z3.lib}/lib:$LD_LIBRARY_PATH"
+    source $(command -v virtualenvwrapper.sh)
+    export LD_LIBRARY_PATH="${stdenv.cc.cc.lib}/lib:${pkgs.z3.lib}/lib:$LD_LIBRARY_PATH"
   '';
 }
