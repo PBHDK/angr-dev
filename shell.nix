@@ -24,6 +24,7 @@ stdenv.mkDerivation rec {
     jdk8
     pkgs.z3
     python3Packages.setuptools
+    pkgs.gdb
 
     # needed for pure environments
     which
