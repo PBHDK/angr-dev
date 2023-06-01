@@ -23,6 +23,7 @@ stdenv.mkDerivation rec {
     openssl
     jdk8
     pkgs.z3
+    python3Packages.setuptools
 
     # needed for pure environments
     which
