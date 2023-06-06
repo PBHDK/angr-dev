@@ -1,9 +1,13 @@
 with import <nixpkgs> { };
-
 stdenv.mkDerivation rec {
   name = "angr-env";
 
-  nativeBuildInputs = [ cmake pkgconfig git ];
+  nativeBuildInputs = [
+    cmake
+    pkgconfig
+    git
+    pkgs.pkgsCross.aarch64-multiplatform.buildPackages.gdb
+  ];
 
   buildInputs = [
     python3Packages.virtualenvwrapper
