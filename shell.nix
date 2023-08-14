@@ -41,6 +41,8 @@ stdenv.mkDerivation rec {
 
     # needed for pure environments
     which
+
+    glibc
   ];
 
   shellHook = ''
